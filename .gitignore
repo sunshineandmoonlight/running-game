@@ -1,0 +1,10 @@
+node_modules/
+dist/
+release/
+output/
+assets/downloads/
+assets/vendor/
+*.png
+!public/**/*.png
+verification-screenshot.png
+.DS_Store
