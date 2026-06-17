@@ -6,5 +6,6 @@ assets/downloads/
 assets/vendor/
 *.png
 !public/**/*.png
+!docs/images/*.png
 verification-screenshot.png
 .DS_Store
