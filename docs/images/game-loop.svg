@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="540" viewBox="0 0 1060 540">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M 0 0 L 10 4 L 0 8 z" fill="#35536b"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#8aa0b3" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <style>
+    .bg { fill: #fbfdff; }
+    .heading { font: 700 28px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #17324d; }
+    .box { stroke: #7aa0bd; stroke-width: 1.5; filter: url(#shadow); }
+    .title { font: 700 17px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #18334d; text-anchor: middle; }
+    .body { font: 13px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #36546c; text-anchor: middle; }
+    .arrow { stroke: #35536b; stroke-width: 2.1; fill: none; }
+  </style>
+  <rect width="100%" height="100%" class="bg"/>
+  <text x="530" y="38" class="heading" text-anchor="middle">游戏主循环流程图</text>
+  <path d="M 240 112 L 320 112" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 490 112 L 570 112" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 740 112 L 820 112" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 905 144 L 905 230" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 820 262 L 740 262" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 570 262 L 490 262" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 320 262 L 240 262" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 240 262 L 320 112" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 655 294 L 550 390" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 445 422 L 240 112" class="arrow" marker-end="url(#arrowhead)" />
+  <g>
+  <rect x="70" y="80" width="170" height="64" rx="14" fill="#e8f7ff" class="box" />
+  <text x="155" y="107" class="title">开始游戏</text>
+  <text x="155" y="124" class="body">初始化状态和场景</text>
+</g>
+<g>
+  <rect x="320" y="80" width="170" height="64" rx="14" fill="#f0f7ff" class="box" />
+  <text x="405" y="107" class="title">读取输入</text>
+  <text x="405" y="124" class="body">换道 / 跳跃 / 暂停</text>
+</g>
+<g>
+  <rect x="570" y="80" width="170" height="64" rx="14" fill="#effbf5" class="box" />
+  <text x="655" y="107" class="title">更新玩家</text>
+  <text x="655" y="124" class="body">位置 / 跳跃 / 滚动</text>
+</g>
+<g>
+  <rect x="820" y="80" width="170" height="64" rx="14" fill="#fff6df" class="box" />
+  <text x="905" y="107" class="title">生成片段</text>
+  <text x="905" y="124" class="body">金币 / 障碍 / 门框</text>
+</g>
+<g>
+  <rect x="820" y="230" width="170" height="64" rx="14" fill="#eef4ff" class="box" />
+  <text x="905" y="257" class="title">移动物体</text>
+  <text x="905" y="274" class="body">向玩家方向推进</text>
+</g>
+<g>
+  <rect x="570" y="230" width="170" height="64" rx="14" fill="#fff0f4" class="box" />
+  <text x="655" y="257" class="title">碰撞检测</text>
+  <text x="655" y="274" class="body">金币 / 跳板 / 障碍</text>
+</g>
+<g>
+  <rect x="320" y="230" width="170" height="64" rx="14" fill="#f2f8e9" class="box" />
+  <text x="405" y="257" class="title">更新界面</text>
+  <text x="405" y="274" class="body">分数 / 金币 / 距离</text>
+</g>
+<g>
+  <rect x="70" y="230" width="170" height="64" rx="14" fill="#f8f0ff" class="box" />
+  <text x="155" y="257" class="title">渲染画面</text>
+  <text x="155" y="274" class="body">requestAnimationFrame</text>
+</g>
+<g>
+  <rect x="445" y="390" width="210" height="64" rx="14" fill="#edf7f7" class="box" />
+  <text x="550" y="417" class="title">结束 / 重开</text>
+  <text x="550" y="434" class="body">显示结果面板</text>
+</g>
+</svg>

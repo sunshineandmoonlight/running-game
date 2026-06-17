@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="620" viewBox="0 0 1140 620">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M 0 0 L 10 4 L 0 8 z" fill="#35536b"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#8aa0b3" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <style>
+    .bg { fill: #fbfdff; }
+    .heading { font: 700 28px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #17324d; }
+    .box { stroke: #7aa0bd; stroke-width: 1.5; filter: url(#shadow); }
+    .title { font: 700 17px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #18334d; text-anchor: middle; }
+    .body { font: 13px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #36546c; text-anchor: middle; }
+    .arrow { stroke: #35536b; stroke-width: 2.1; fill: none; }
+  </style>
+  <rect width="100%" height="100%" class="bg"/>
+  <text x="570" y="38" class="heading" text-anchor="middle">3D 模型加载与兜底机制图</text>
+  <path d="M 280 116 L 380 116" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 580 116 L 680 116" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 680 116 L 400 314" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 790 152 L 670 275" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 400 314 L 860 314" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 780 314 L 860 314" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 400 314 L 430 494" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 670 353 L 555 455" class="arrow" marker-end="url(#arrowhead)" />
+<path d="M 860 314 L 680 494" class="arrow" marker-end="url(#arrowhead)" />
+  <g>
+  <rect x="80" y="80" width="200" height="72" rx="14" fill="#e8f7ff" class="box" />
+  <text x="180" y="107" class="title">请求 GLB 模型</text>
+  <text x="180" y="124" class="body">Kenney 模型资源</text>
+</g>
+<g>
+  <rect x="380" y="80" width="200" height="72" rx="14" fill="#f0f7ff" class="box" />
+  <text x="480" y="107" class="title">加载结果判断</text>
+  <text x="480" y="124" class="body">成功 / 失败</text>
+</g>
+<g>
+  <rect x="680" y="80" width="220" height="72" rx="14" fill="#effbf5" class="box" />
+  <text x="790" y="107" class="title">可见性检查</text>
+  <text x="790" y="124" class="body">Mesh / 父级 / 材质</text>
+</g>
+<g>
+  <rect x="180" y="275" width="220" height="78" rx="14" fill="#f2f8e9" class="box" />
+  <text x="290" y="302" class="title">使用 GLB 模型</text>
+  <text x="290" y="319" class="body">城市 / 金币 / 箱子 / 尖刺</text>
+</g>
+<g>
+  <rect x="560" y="275" width="220" height="78" rx="14" fill="#fff6df" class="box" />
+  <text x="670" y="302" class="title">基础几何体兜底</text>
+  <text x="670" y="319" class="body">Box / Cone / Cylinder</text>
+</g>
+<g>
+  <rect x="860" y="275" width="220" height="78" rx="14" fill="#fff0f4" class="box" />
+  <text x="970" y="302" class="title">高障碍可见标记</text>
+  <text x="970" y="319" class="body">保证危险位置可见</text>
+</g>
+<g>
+  <rect x="430" y="455" width="250" height="78" rx="14" fill="#f8f0ff" class="box" />
+  <text x="555" y="482" class="title">统一碰撞盒</text>
+  <text x="555" y="499" class="body">视觉模型与判定解耦</text>
+<text x="555" y="519" class="body">提升稳定性</text>
+</g>
+</svg>
